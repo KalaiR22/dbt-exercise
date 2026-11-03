@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: mdl_customer
+    description: final model for customer table
+    tests:
+      - row_test:
+          source_name: source_data
+          table_name: customer
+          description: >
+            below one stores the failures as table 
+            reconciliation test for source and target table
+          store_failures: true
